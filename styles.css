@@ -1,28 +1,32 @@
 :root{
-  --bg:#f5f1e6; /* cream */
-  --text:#0a2540; /* deep navy */
-  --accent:#c79f47; /* classic gold */
+  --bg: #01091a; /* cream */
+  --text:#fbfcfd; /* deep navy */
+  --accent:#b5bbc5; /* classic gold */
 }
 *{box-sizing:border-box}
 body{
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code', Helvetica, sans-serif;
   background:var(--bg);
   color:var(--text);
   -webkit-font-smoothing:antialiased;
 }
 .container{max-width:900px;margin:0 auto;padding:24px}
-.hero{background:linear-gradient(180deg, rgba(10,37,64,0.95), rgba(199,159,71,0.9));color:#fff;padding:48px 0}
-.hero .container{display:flex;flex-direction:column;gap:8px}
+.hero{background:linear-gradient(180deg, rgba(54, 56, 58, 0.95), rgba(20, 48, 185, 0.9));color:#e6e5e9;padding:48px 0}
+.hero .container{display:flex;flex-direction:column;gap:8px;align-items:center}
+.hero-content{flex:1}
+.profile-pic{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,0.2)}
 .hero h1{margin:0;font-size:2.4rem}
 .role{opacity:0.95}
 .contact-btn{display:inline-block;margin-top:12px;padding:8px 14px;background:var(--bg);color:var(--text);text-decoration:none;border-radius:6px}
 main{padding:32px 0}
 section{margin-bottom:28px}
-.project{background:#fff;padding:16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
+.project{background:#232542;padding:16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
 .project h3{margin-top:0}
 .project-link{color:var(--accent);text-decoration:none}
 .footer{border-top:1px solid rgba(10,37,64,0.06);padding:16px 0;text-align:center;font-size:0.9rem}
 @media(min-width:720px){
-  .hero .container{flex-direction:row;justify-content:space-between;align-items:center}
+  .hero .container{flex-direction:row;justify-content:space-between;align-items:center;gap:32px}
+  .hero-content{flex:1}
+  .profile-pic{width:150px;height:150px}
 }
